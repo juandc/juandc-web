@@ -1,0 +1,111 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+}
+
+
+.hero-container {
+  text-align: center;
+  margin: 0 auto;
+  max-width: 700px;
+  width: 90%;
+}
+
+.hero-title {
+  margin-top: 180px;
+  font-size: 24px;
+}
+
+.hero-titleSpan {
+  display: block;
+  font-size: 48px;
+  margin-top: 24px;
+  line-height: 58px;
+}
+
+.hero-titleSpan u {
+  text-underline-offset: 10px;
+}
+
+.hero-description {
+  margin-top: 36px;
+  font-size: 24px;
+}
+
+
+.courses-container {
+  display: flex;
+  gap: 24px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 160px auto 0;
+  max-width: 1200px;
+  width: 90%;
+}
+
+.courses-title {
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.course-card {
+  border: 4px solid #000;
+  border-radius: 12px;
+  padding: 35px 28px;
+  min-height: 250px;
+  min-width: 300px;
+  width: calc(33% - 13px);
+  position: relative;
+}
+
+.course-cardBadge {
+  margin: 0;
+  padding: 0;
+  width: 70px;
+  height: 70px;
+}
+
+.course-cardBadge img {
+  width: 100%;
+  height: 100%;
+}
+
+.course-cardTitle {
+  font-size: 21px;
+  margin: 24px 0 0;
+}
+
+.course-cardDescription {
+  font-size: 21px;
+  margin: 12px 0 0;
+}
+
+.course-cardLink::after {
+  content: ' ';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+
+footer {
+  margin-top: 160px;
+}
+
+
+@media (max-width: 1200px) {
+  .course-card {
+    width: 48%;
+  }
+}
+
+@media (max-width: 768px) {
+  .course-card {
+    width: 100%;
+  }
+}
