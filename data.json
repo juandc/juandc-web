@@ -1,0 +1,22 @@
+{
+  "courses": [
+    {
+      "name": "Curso Gratis de Programación Básica",
+      "description": "Aprende a programar desde cero. Crea tus primeros sitios web con HTML y CSS. Desarrolla un videojuego multijugador de Mokepones con JavaScript.",
+      "link": "https://platzi.com/cursos/programacion-basica/?utm_source=juandc-website",
+      "badge": "https://static.platzi.com/media/achievements/badge-piezas-programacion-basica-ede320eb-b1a9-4f1c-8b61-dd0502bbe4d3.png"
+    },
+    {
+      "name": "Curso Práctico de JavaScript",
+      "description": "¿Dominas la sintaxis básica de JavaScript? Entonces aprende cómo conectar JS con HTML para crear sitios y aplicaciones web interactivas.",
+      "link": "https://platzi.com/cursos/javascript-practico/?utm_source=juandc-website",
+      "badge": "https://static.platzi.com/media/achievements/practico-javascript_badge-fb533fa5-73c8-4f75-9d81-0294d9013ab5.png"
+    },
+    {
+      "name": "Curso de Introducción a React.js",
+      "description": "Agiliza tu desarrollo frontend con la librería más popular de JavaScript. Trabaja con components, estados, portales y contextos.",
+      "link": "https://platzi.com/cursos/react/?utm_source=juandc-website",
+      "badge": "https://static.platzi.com/media/achievements/badge-react-2018-0a41bdc5-e874-45c9-ac67-98294c898da4.png"
+    }
+  ]
+}
