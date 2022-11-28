@@ -1,5 +1,6 @@
 * {
   box-sizing: border-box;
+  outline-color: var(--txt-l);
   /* transition: color .3s; */
 }
 
@@ -106,7 +107,8 @@ body::before {
 }
 
 .schemeToggle-checkbox:focus + .schemeToggle-switch {
-  outline: 1px solid rgb(0, 95, 204);
+  outline: 1px solid var(--txt-1);
+  border: none;
 }
 
 .schemeToggle-checkbox:checked + .schemeToggle-switch {

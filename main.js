@@ -62,9 +62,11 @@ function setColorScheme(newColorScheme) {
   if (newColorScheme === 'dark') {
     $body.classList.remove('light')
     $body.classList.add('dark')
+    $schemeCheckbox.checked = true;
   } else {
     $body.classList.add('light')
     $body.classList.remove('dark')
+    $schemeCheckbox.checked = false;
   }
 
   localStorage.setItem('color-scheme', JSON.stringify(newColorScheme))
