@@ -7,9 +7,39 @@
   </head>
   <body>
     <div id="app">
-      <header id="hero" class="hero-container">
-        <nav id="menu"></nav>
+      <nav id="menu" class="menu-container">
+        <div class="schemeToggle-container">
+          <input
+            class="schemeToggle-checkbox"
+            type="checkbox"
+            name="scheme"
+            id="scheme"
+          />
 
+          <label
+            class="schemeToggle-switch"
+            for="scheme"
+          ></label>
+        </div>
+        
+        <select class="lang-container" name="lang">
+          <option
+            class="lang-option"
+            value="en"
+            selected
+          >
+            English
+          </option>
+          <option
+            class="lang-option"
+            value="es"
+          >
+            Español
+          </option>
+        </select>
+      </nav>
+
+      <header id="hero" class="hero-container">
         <h1 class="hero-title">
           JUANDC
           <span class="hero-titleSpan">A bridge between design, development, and <u>education</u></span>
