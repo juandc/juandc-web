@@ -6,32 +6,40 @@
 
 :root {
   font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
-  --bg-light-gradient-1: #F9ECFF;
-  --bg-light-gradient-2: #E2FEEE;
-  --bg-dark-gradient-1: #15011E;
-  --bg-dark-gradient-2: #011409;
-  --txt-light-1: #15011E;
-  --txt-light-special: #8015A6;
-  --txt-light-special-2: #4FD70F;
-  --txt-dark-1: #F9ECFF;
-  --txt-dark-special: #CA6AEC;
-  --txt-light-special-2: #3DA70C;
+
+  --light-bg-gradient-1: #F9ECFF;
+  --light-bg-gradient-2: #E2FEEE;
+  --light-txt-1: #15011E;
+  --light-txt-special: #8015A6;
+  --light-txt-special-2: #3DA70C;
+  --light-txt-special-3: #0E0319;
+  
+  --dark-bg-gradient-1: #15011E;
+  --dark-bg-gradient-2: #011409;
+  --dark-txt-1: #F9ECFF;
+  --dark-txt-special: #CA6AEC;
+  --dark-txt-special-2: #4FD70F;
+  --dark-txt-special-3: #E6D1FA;
 }
 
 body, body.light {
-  --bg-gradient-1: var(--bg-light-gradient-1);
-  --bg-gradient-2: var(--bg-light-gradient-2);
-  --txt-1: var(--txt-light-1);
-  --txt-special: var(--txt-light-special);
-  --txt-special-2: var(--txt-light-special-2);
+  --bg-gradient-1: var(--light-bg-gradient-1);
+  --bg-gradient-2: var(--light-bg-gradient-2);
+
+  --txt-1: var(--light-txt-1);
+  --txt-special: var(--light-txt-special);
+  --txt-special-2: var(--light-txt-special-2);
+  --txt-special-3: var(--light-txt-special-3);
 }
 
 body.dark {
-  --bg-gradient-1: var(--bg-dark-gradient-1);
-  --bg-gradient-2: var(--bg-dark-gradient-2);
-  --txt-1: var(--txt-dark-1);
-  --txt-special: var(--txt-dark-special);
-  --txt-special-2: var(--txt-dark-special-2);
+  --bg-gradient-1: var(--dark-bg-gradient-1);
+  --bg-gradient-2: var(--dark-bg-gradient-2);
+
+  --txt-1: var(--dark-txt-1);
+  --txt-special: var(--dark-txt-special);
+  --txt-special-2: var(--dark-txt-special-2);
+  --txt-special-3: var(--dark-txt-special-3);
 }
 
 body {
@@ -141,13 +149,21 @@ body::before {
 .hero-titleSpan {
   display: block;
   font-size: 48px;
+  font-weight: 900;
   margin-top: 24px;
   line-height: 58px;
-  color: var(--txt-1);
+  /* color: var(--txt-1); */
+  background: linear-gradient(91.22deg, var(--txt-special-3) 12.19%, var(--dark-txt-special-2) 57.61%, var(--txt-special-3) 97.93%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
 }
 
 .hero-titleSpan u {
+  text-decoration-color: var(--txt-special-3);
   text-underline-offset: 10px;
+  color: var(--txt-special-3);
 }
 
 .hero-description {
