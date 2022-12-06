@@ -120,14 +120,6 @@ body::before {
   transform: translate(28px, 4px);
 }
 
-.lang-container {
-  border: none;
-  background: transparent;
-  color: inherit;
-  cursor: pointer;
-  padding-right: 2px;
-}
-
 
 .hero-container {
   text-align: center;

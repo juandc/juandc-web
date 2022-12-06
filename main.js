@@ -3,6 +3,7 @@ import data from './data.json';
 
 let $body;
 let $schemeCheckbox;
+let $langSelect;
 let $coursesContainer;
 
 let colorScheme = '';
@@ -12,31 +13,11 @@ window.addEventListener('DOMContentLoaded', start);
 function start() {
   $body = document.querySelector('body');
   $schemeCheckbox = document.querySelector('#scheme');
+  $langSelect = document.querySelector('#lang');
   $coursesContainer = document.querySelector('#courses');
   
   setInitialColorScheme();
-
-  data.courses.forEach(course => {
-    $coursesContainer.innerHTML += `
-      <section class="course-card">
-      <figure class="course-cardBadge">
-        <img
-          src="${course.badge}"
-          alt="${course.name}"
-        />
-      </figure>
-
-      <h3 class="course-cardTitle">
-      ${course.name}
-      </h3>
-      <p class="course-cardDescription">
-        ${course.description}
-      </p>
-
-      <a class="course-cardLink" href="${course.link}" target="_blank">Tomar el curso?</a>
-    </section>
-    `;
-  });
+  renderCourses();
 }
 
 function setInitialColorScheme() {
@@ -97,4 +78,28 @@ function setColorScheme(newColorScheme) {
   localStorage.setItem('color-scheme', JSON.stringify(newColorScheme))
 
   colorScheme = newColorScheme;
+}
+
+function renderCourses() {
+  data.courses.forEach(course => {
+    $coursesContainer.innerHTML += `
+      <section class="course-card">
+      <figure class="course-cardBadge">
+        <img
+          src="${course.badge}"
+          alt="${course.name}"
+        />
+      </figure>
+
+      <h3 class="course-cardTitle">
+        ${course.name}
+      </h3>
+      <p class="course-cardDescription">
+        ${course.description}
+      </p>
+
+      <a class="course-cardLink" href="${course.link}" target="_blank">Tomar el curso?</a>
+    </section>
+    `;
+  });
 }
