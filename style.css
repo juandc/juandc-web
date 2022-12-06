@@ -12,8 +12,10 @@
   --bg-dark-gradient-2: #011409;
   --txt-light-1: #15011E;
   --txt-light-special: #8015A6;
+  --txt-light-special-2: #4FD70F;
   --txt-dark-1: #F9ECFF;
   --txt-dark-special: #CA6AEC;
+  --txt-light-special-2: #3DA70C;
 }
 
 body, body.light {
@@ -21,6 +23,7 @@ body, body.light {
   --bg-gradient-2: var(--bg-light-gradient-2);
   --txt-1: var(--txt-light-1);
   --txt-special: var(--txt-light-special);
+  --txt-special-2: var(--txt-light-special-2);
 }
 
 body.dark {
@@ -28,6 +31,7 @@ body.dark {
   --bg-gradient-2: var(--bg-dark-gradient-2);
   --txt-1: var(--txt-dark-1);
   --txt-special: var(--txt-dark-special);
+  --txt-special-2: var(--txt-dark-special-2);
 }
 
 body {
@@ -199,6 +203,13 @@ body::before {
   margin: 12px 0 0;
 }
 
+.course-cardLink {
+  color: var(--txt-special-2);
+  font-weight: bold;
+  margin-top: 16px;
+  display: inline-block;
+}
+
 .course-cardLink::after {
   content: ' ';
   position: absolute;
@@ -206,6 +217,12 @@ body::before {
   left: 0;
   right: 0;
   bottom: 0;
+}
+
+.course-cardLinkIcon {
+  width: 16px;
+  margin-bottom: -2px;
+  margin-left: -12px;
 }
 
 

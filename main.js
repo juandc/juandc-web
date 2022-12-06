@@ -1,9 +1,9 @@
 import './style.css';
 import data from './data.json';
+import icon from './LinkIcon.png'
 
 let $body;
 let $schemeCheckbox;
-let $langSelect;
 let $coursesContainer;
 
 let colorScheme = '';
@@ -13,7 +13,6 @@ window.addEventListener('DOMContentLoaded', start);
 function start() {
   $body = document.querySelector('body');
   $schemeCheckbox = document.querySelector('#scheme');
-  $langSelect = document.querySelector('#lang');
   $coursesContainer = document.querySelector('#courses');
   
   setInitialColorScheme();
@@ -98,7 +97,18 @@ function renderCourses() {
         ${course.description}
       </p>
 
-      <a class="course-cardLink" href="${course.link}" target="_blank">Tomar el curso?</a>
+      <a
+        class="course-cardLink"
+        href="${course.link}"
+        target="_blank"
+      >
+        Tomar el curso
+        <span style="color: transparent">.</span>
+        <img
+          class="course-cardLinkIcon"
+          src="${icon}"
+        />
+      </a>
     </section>
     `;
   });
