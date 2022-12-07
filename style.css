@@ -74,6 +74,12 @@ body::before {
   }
 }
 
+a {
+  color: var(--txt-special-2);
+  font-weight: bold;
+  text-underline-offset: 2px;
+}
+
 
 .menu-container {
   display: flex;
@@ -179,31 +185,39 @@ body::before {
 }
 
 
-.courses-container {
+.section-container {
+  margin: 144px auto 0;
+  max-width: 1200px;
+  width: 90%;
+
   display: flex;
   gap: 24px;
   justify-content: space-between;
   flex-wrap: wrap;
-  margin: 144px auto 0;
-  max-width: 1200px;
-  width: 90%;
 }
 
-.courses-title {
+.section-title {
   margin: 0 0 20px;
   width: 100%;
 }
 
-.course-card {
+.card {
   border: 4px solid;
   border-radius: 12px;
-
-  padding: 35px 28px;
-  min-height: 250px;
-  min-width: 300px;
-  width: calc(33% - 13px);
   position: relative;
   overflow: hidden;
+  min-height: 250px;
+  min-width: 300px;
+}
+
+
+/* .courses-container {} */
+
+/* .courses-title {} */
+
+.course-card {
+  padding: 35px 28px;
+  width: calc(33% - 13px);
 }
 
 body.light .course-card {
@@ -291,11 +305,7 @@ body.dark .course-card:hover {
   margin: 12px 0 16px;
 }
 
-.course-cardLink {
-  color: var(--txt-special-2);
-  font-weight: bold;
-  text-underline-offset: 2px;
-}
+/* .course-cardLink { } */
 
 .course-cardLink::after {
   content: ' ';
@@ -312,6 +322,90 @@ body.dark .course-card:hover {
   margin-left: -12px;
 }
 
+
+.about-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  width: 100%;
+  padding: 48px 64px;
+}
+
+.about-cardPhoto {
+  position: relative;
+  width: 48%;
+  min-width: 300px;
+  margin: 0 48px 0 0;
+  padding: 0;
+}
+
+.about-cardPhoto img {
+  border-radius: 24px;
+  width: 100%;
+}
+
+.about-cardDescription {
+  font-size: 24px;
+}
+
+.about-cardDescription p {
+  margin-top: 0;
+}
+
+.about-cardDescription p:last-child {
+  margin-bottom: 0;
+}
+
+@media (max-width: 1145px) {
+  .about-cardDescription {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .about-cardDescription {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 956px) {
+  .about-card {
+    flex-wrap: wrap;
+  }
+  .about-cardPhoto {
+    width: 50%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+  }
+  .about-cardDescription {
+    font-size: 24px;
+  }
+  .about-cardDescription p:first-child {
+    margin-top: 48px;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-cardPhoto {
+    width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  .about-card {
+    padding: 48px 48px;
+  }
+  .about-cardPhoto {
+    min-width: initial;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-card {
+    padding: 40px 32px;
+  }
+}
 
 footer {
   margin-top: 144px;

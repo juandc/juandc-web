@@ -87,7 +87,7 @@ function renderCourses() {
   data.courses.forEach(course => {
     $coursesContainer.innerHTML += `
       <section
-        class="course-card"
+        class="card course-card"
         id="${course.name}"
       >
         <figure class="course-cardBadge">
