@@ -80,36 +80,67 @@ function setColorScheme(newColorScheme) {
 }
 
 function renderCourses() {
+  const mouseSpanName = x => (
+    'mouse-' + x.split(' ').join('')
+  );
+  
   data.courses.forEach(course => {
     $coursesContainer.innerHTML += `
-      <section class="course-card">
-      <figure class="course-cardBadge">
-        <img
-          src="${course.badge}"
-          alt="${course.name}"
-        />
-      </figure>
-
-      <h3 class="course-cardTitle">
-        ${course.name}
-      </h3>
-      <p class="course-cardDescription">
-        ${course.description}
-      </p>
-
-      <a
-        class="course-cardLink"
-        href="${course.link}"
-        target="_blank"
+      <section
+        class="course-card"
+        id="${course.name}"
       >
-        Tomar el curso
-        <span style="color: transparent">.</span>
-        <img
-          class="course-cardLinkIcon"
-          src="${icon}"
-        />
-      </a>
-    </section>
+        <figure class="course-cardBadge">
+          <img
+            src="${course.badge}"
+            alt="${course.name}"
+          />
+        </figure>
+
+        <h3 class="course-cardTitle">
+          ${course.name}
+        </h3>
+        <p class="course-cardDescription">
+          ${course.description}
+        </p>
+
+        <a
+          class="course-cardLink"
+          href="${course.link}"
+          target="_blank"
+        >
+          Tomar el curso
+          <span style="color: transparent">.</span>
+          <img
+            class="course-cardLinkIcon"
+            src="${icon}"
+          />
+        </a>
+
+        <span id="${mouseSpanName(course.name)}"><span>
+      </section>
     `;
   });
+
+  data.courses.forEach(course => {
+    const courseCard = document.getElementById(course.name);
+    const spanName = mouseSpanName(course.name);
+    const mouseSpan = document.getElementById(spanName);
+
+    courseCard.addEventListener('mousemove', (e) => {
+      const x = e.layerX - (courseCard.offsetWidth / 2);
+      const y = e.layerY - (courseCard.offsetHeight / 2);
+      mouseSpan.style.transform = `
+        translateX(${x}px)
+        translateY(${y}px)
+      `;
+    });
+
+    courseCard.addEventListener('mouseleave', (e) => {
+      mouseSpan.style.transform = `
+        translateX(-50%)
+        translateY(-50%)
+      `;
+    });
+  })
 }

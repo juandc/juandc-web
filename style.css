@@ -230,6 +230,39 @@ body.dark .course-card:hover {
   transform: scale(1.01);
 }
 
+.course-card > span {
+  content: ' ';
+  z-index: -1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 125px;
+  height: 125px;
+  filter: blur(120px);
+  
+  background-color: transparent;
+  transform:
+    translateX(-50%)
+    translateY(-50%)
+  ;
+  transform-origin: center;
+  transition-property: transform, background-color;
+  transition-duration: .15s;
+}
+
+.course-card:hover > span {
+  background-color: var(--txt-special);
+}
+
+@media (prefers-reduced-motion) {
+  .course-card {
+    transform: none !important;
+    transition: none !important;
+  }
+
+  .course-card > span { display: none; }
+}
+
 .course-cardBadge {
   margin: 0;
   padding: 0;
