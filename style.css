@@ -45,6 +45,8 @@ body.dark {
 
 body {
   color: var(--txt-1);
+  margin: 0;
+  padding: 0;
 }
 
 body::before {
@@ -78,6 +80,10 @@ body::before {
   justify-content: end;
   gap: 24px;
   padding: 24px 0 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
   margin: 0 auto;
   max-width: 1200px;
   width: 90%;
@@ -136,13 +142,13 @@ body::before {
 
 .hero-container {
   text-align: center;
-  margin: 0 auto;
+  margin: 180px auto 0;
   max-width: 700px;
   width: 90%;
 }
 
 .hero-title {
-  margin-top: 180px;
+  margin: 0;
   font-size: 24px;
   color: var(--txt-special);
 }
@@ -178,13 +184,13 @@ body::before {
   gap: 24px;
   justify-content: space-between;
   flex-wrap: wrap;
-  margin: 160px auto 0;
+  margin: 144px auto 0;
   max-width: 1200px;
   width: 90%;
 }
 
 .courses-title {
-  margin-bottom: 20px;
+  margin: 0 0 20px;
   width: 100%;
 }
 
@@ -308,7 +314,7 @@ body.dark .course-card:hover {
 
 
 footer {
-  margin-top: 160px;
+  margin-top: 144px;
 }
 
 
