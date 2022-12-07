@@ -5,7 +5,7 @@
 }
 
 :root {
-  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+  font-family: Avenir, Helvetica, Arial, sans-serif;
 
   --light-bg-gradient-1: #F9ECFF;
   --light-bg-gradient-2: #E2FEEE;
@@ -155,14 +155,16 @@ a {
 
 .hero-title {
   margin: 0;
-  font-size: 24px;
   color: var(--txt-special);
+  font-size: 24px;
+  font-weight: 900;
+  font-family: Dosis;
 }
 
 .hero-titleSpan {
   display: block;
   font-size: 48px;
-  font-weight: 900;
+  font-family: Avenir;
   margin-top: 24px;
   line-height: 58px;
   /* color: var(--txt-1); */
@@ -199,6 +201,7 @@ a {
 .section-title {
   margin: 0 0 20px;
   width: 100%;
+  font-family: 'Dosis';
 }
 
 .card {
@@ -279,13 +282,6 @@ body.dark .course-card:hover {
   transform: scale(1.01);
 }
 
-@media (prefers-reduced-motion) {
-  .course-card {
-    transform: none !important;
-    transition: none !important;
-  }
-}
-
 .course-cardBadge {
   margin: 0;
   padding: 0;
@@ -323,6 +319,21 @@ body.dark .course-card:hover {
   width: 16px;
   margin-bottom: -2px;
   margin-left: -12px;
+}
+
+@media (prefers-reduced-motion) {
+  .course-card {
+    transform: none !important;
+    transition: none !important;
+  }
+}
+
+@media (max-width: 1200px) {
+  .course-card { width: 48%; }
+}
+
+@media (max-width: 768px) {
+  .course-card { width: 100%; }
 }
 
 
@@ -426,19 +437,6 @@ footer a:hover {
 @media (max-width: 956px) {
   footer a {
     text-align: center;
-    width: 100%;
-  }
-}
-
-
-@media (max-width: 1200px) {
-  .course-card {
-    width: 48%;
-  }
-}
-
-@media (max-width: 768px) {
-  .course-card {
     width: 100%;
   }
 }
