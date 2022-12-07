@@ -408,7 +408,22 @@ body.dark .course-card:hover {
 }
 
 footer {
-  margin-top: 144px;
+  padding-bottom: 24px;
+}
+
+footer a {
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 956px) {
+  footer a {
+    text-align: center;
+    width: 100%;
+  }
 }
 
 
