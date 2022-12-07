@@ -17,6 +17,7 @@ function start() {
   
   setInitialColorScheme();
   renderCourses();
+  setAboutEffects();
 }
 
 function setInitialColorScheme() {
@@ -117,7 +118,7 @@ function renderCourses() {
           />
         </a>
 
-        <span id="${mouseSpanName(course.name)}"><span>
+        <span id="${mouseSpanName(course.name)}" class="mouseTracker"><span>
       </section>
     `;
   });
@@ -127,20 +128,31 @@ function renderCourses() {
     const spanName = mouseSpanName(course.name);
     const mouseSpan = document.getElementById(spanName);
 
-    courseCard.addEventListener('mousemove', (e) => {
-      const x = e.layerX - (courseCard.offsetWidth / 2);
-      const y = e.layerY - (courseCard.offsetHeight / 2);
-      mouseSpan.style.transform = `
-        translateX(${x}px)
-        translateY(${y}px)
-      `;
-    });
-
-    courseCard.addEventListener('mouseleave', (e) => {
-      mouseSpan.style.transform = `
-        translateX(-50%)
-        translateY(-50%)
-      `;
-    });
+    mouseTracker(courseCard, mouseSpan);
   })
+}
+
+function setAboutEffects() {
+  const aboutCard = document.querySelector('#about .about-card');
+  const mouseSpan = document.querySelector('#aboutCardMouseTracker');
+
+  mouseTracker(aboutCard, mouseSpan);
+}
+
+function mouseTracker(container, span) {
+  container.addEventListener('mousemove', (e) => {
+    const x = e.layerX - (container.offsetWidth / 2);
+    const y = e.layerY - (container.offsetHeight / 2);
+    span.style.transform = `
+      translateX(${x}px)
+      translateY(${y}px)
+    `;
+  });
+
+  container.addEventListener('mouseleave', (e) => {
+    span.style.transform = `
+      translateX(-50%)
+      translateY(-50%)
+    `;
+  });
 }
