@@ -26,7 +26,7 @@
     },
     {
       "name": "Taller Práctico de JavaScript: ¡Crea tu Primer Videojuego!",
-      "description": "Crea videojuegos para usando tecnologías puras de HTML5, JavaScript canvas y arreglos multidimensionales.",
+      "description": "Crea videojuegos para usando tecnologías puras de HTML5, JavaScript, canvas y arreglos multidimensionales.",
       "link": "https://platzi.com/cursos/javascript-practico-videojuegos/?utm_source=juandc-website",
       "badge": "https://static.platzi.com/media/achievements/badge-js-videojuegos-web-41bd3f29-ff5c-4224-a2d3-a8f28604693c.png"
     },
@@ -80,13 +80,13 @@
     },
     {
       "name": "Curso de React.js: Manejo Profesional del Estado",
-      "description": "Identifica las herramientas ideales para construir o refactorizar componentes: estados independientes o compuestos, imperativos o declarativos, con funciones o clases, con useState o useReducer.",
+      "description": "Identifica las herramientas ideales para construir y refactorizar componentes: estados independientes o compuestos, imperativos o declarativos, con funciones o clases, con useState o useReducer.",
       "link": "https://platzi.com/cursos/react-estado/?utm_source=juandc-website",
       "badge": "https://static.platzi.com/cdn-cgi/image/width=1024,quality=50,format=auto/media/achievements/react-a4cc5125-0dee-4ec4-a3e3-f1d799973cfd.png"
     },
     {
       "name": "Curso de React.js: Navegación con React Router",
-      "description": "Domina la API de cualquier React Router para integrarlo a viejos o nuevos proyectos. Trabaja con rutas dinámicas, públicas o privadas, además de transmitir estados durante la navegación.",
+      "description": "Domina la API de cualquier React Router para integrarlo a viejos o nuevos proyectos. Trabaja con rutas dinámicas, públicas y privadas transmitiendo estados durante la navegación.",
       "link": "https://platzi.com/cursos/react-router/?utm_source=juandc-website",
       "badge": "https://static.platzi.com/cdn-cgi/image/width=1024,quality=50,format=auto/media/achievements/badge-reactrouter-4271fbdd-0c60-43bd-8208-9e2232da90e6.png"
     }
