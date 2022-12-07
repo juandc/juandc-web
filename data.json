@@ -7,16 +7,88 @@
       "badge": "https://static.platzi.com/media/achievements/badge-piezas-programacion-basica-ede320eb-b1a9-4f1c-8b61-dd0502bbe4d3.png"
     },
     {
+      "name": "Proyectos Crativos para Niñas y Niños",
+      "description": "¡Tu edad no importa para crear tus primeros inventos y proyectos creativos! Inicia tu aventura en el mundo de la programación creando videojuegos y aplicaciones.",
+      "link": "https://platzi.com/cursos/proyectos-creativos/?utm_source=juandc-website",
+      "badge": "https://static.platzi.com/cdn-cgi/image/width=1024,quality=50,format=auto/media/achievements/piezas-proyectos-creativos-ninas-ninos_badge-01cb5e21-e5b5-46c3-9d10-691c7661f9a3.png"
+    },
+    {
       "name": "Curso Práctico de JavaScript",
       "description": "¿Dominas la sintaxis básica de JavaScript? Entonces aprende cómo conectar JS con HTML para crear sitios y aplicaciones web interactivas.",
       "link": "https://platzi.com/cursos/javascript-practico/?utm_source=juandc-website",
       "badge": "https://static.platzi.com/media/achievements/practico-javascript_badge-fb533fa5-73c8-4f75-9d81-0294d9013ab5.png"
     },
     {
+      "name": "Taller Práctico de JavaScript: Matemáticas y Estadística Básica",
+      "description": "Resuelve problemas de matemáticas con JavaScript. Encuentra usos prácticos de la estadística desarrollando sitios web interactivos.",
+      "link": "https://platzi.com/cursos/javascript-practico-matematicas/?utm_source=juandc-website",
+      "badge": "https://static.platzi.com/cdn-cgi/image/width=1024,quality=50,format=auto/media/achievements/practico-javascript-matematicas_piezas_badge-06073d4a-f0f1-4ddb-9a2a-eabd9bc2a6fd.png"
+    },
+    {
+      "name": "Taller Práctico de JavaScript: ¡Crea tu Primer Videojuego!",
+      "description": "Crea videojuegos para usando tecnologías puras de HTML5, JavaScript canvas y arreglos multidimensionales.",
+      "link": "https://platzi.com/cursos/javascript-practico-videojuegos/?utm_source=juandc-website",
+      "badge": "https://static.platzi.com/media/achievements/badge-js-videojuegos-web-41bd3f29-ff5c-4224-a2d3-a8f28604693c.png"
+    },
+    {
+      "name": "Curso Básico de Programación Orientada a Objetos con JavaScript",
+      "description": "Descubre la diferencia entre objetos literales, instancias, clases y prototipos en JavaScript. Pon en práctica los pilares de la POO y analiza sus casos de uso.",
+      "link": "https://platzi.com/cursos/javascript-poo/?utm_source=juandc-website",
+      "badge": "https://static.platzi.com/cdn-cgi/image/width=1024,quality=50,format=auto/media/achievements/badges-curso-js-poo-51952eaf-1573-43d6-9b8a-4a19967aa5e9.png"
+    },
+    {
+      "name": "Curso Intermedio de Programación Orientada a Objetos con JavaScript",
+      "description": "Analiza la copia, identificación y encapsulamiento de objetos literales, prototipos o clases. Explora cómo funciona la memoria del navegador y el sistema de herencia en objetos con proto.",
+      "link": "https://platzi.com/cursos/javascript-poo-intermedio/?utm_source=juandc-website",
+      "badge": "https://static.platzi.com/cdn-cgi/image/width=1024,quality=50,format=auto/media/achievements/intermedio-programacion-orientada-js-badge-b29243cc-39b1-4f4a-aec0-59f96f0412cd.png"
+    },
+    {
+      "name": "Curso de Consumo de API REST con JavaScript",
+      "description": "Domina el flujo de comunicación entre Frontend y Backend y haz tus primeras solicitudes asíncronas usando fetch para construir un sitio web de gatitos.",
+      "link": "https://platzi.com/cursos/api/?utm_source=juandc-website",
+      "badge": "https://static.platzi.com/cdn-cgi/image/width=1024,quality=50,format=auto/media/achievements/image-0ca92613-cd68-4147-993c-751978c2a554.png"
+    },
+    {
+      "name": "Curso Práctico de Consumo de API REST con JavaScript",
+      "description": "Desarrolla una Single Page Application para  busqueda de películas con hash navigation y conexión a la API de TheMovieDB.",
+      "link": "https://platzi.com/cursos/api-practico/?utm_source=juandc-website",
+      "badge": "https://static.platzi.com/cdn-cgi/image/width=1024,quality=50,format=auto/media/achievements/image-a8f443d3-8404-4136-8440-17add0d9ee0f.png"
+    },
+    {
+      "name": "Curso Profesional de Consumo de API REST con JavaScript",
+      "description": "Optimiza el tiempo de carga de tus proyectos y mejora la UX de tu SPA con loading skeletons, scroll infinito y Local Storage.",
+      "link": "https://platzi.com/cursos/api-profesional/?utm_source=juandc-website",
+      "badge": "https://static.platzi.com/cdn-cgi/image/width=1024,quality=50,format=auto/media/achievements/curso-profesional-consumo-api-rest-javascript_badge-842a9d5d-8995-48e7-8582-73b1890.png"
+    },
+    {
+      "name": "Curso de Frameworks y Librerías de JavaScript",
+      "description": "¿React, Vue, Angular o Svelte? Explora el ecosistema del desarrollo frontend y compara las ventajas de sus frameworks y librerías más populares.",
+      "link": "https://platzi.com/cursos/frameworks-javascript/?utm_source=juandc-website",
+      "badge": "https://static.platzi.com/cdn-cgi/image/width=1024,quality=50,format=auto/media/achievements/badge-introduccion-frameworks-javascript-72c0e3a6-a4e9-4d6d-a13a-a3f0bc17d607.png"
+    },
+    {
       "name": "Curso de Introducción a React.js",
-      "description": "Agiliza tu desarrollo frontend con la librería más popular de JavaScript. Trabaja con components, estados, portales y contextos.",
+      "description": "Agiliza tu desarrollo frontend con la librería más popular de JavaScript. Trabaja con componentes, estados, portales y contextos.",
       "link": "https://platzi.com/cursos/react/?utm_source=juandc-website",
       "badge": "https://static.platzi.com/media/achievements/badge-react-2018-0a41bdc5-e874-45c9-ac67-98294c898da4.png"
+    },
+    {
+      "name": "Curso de React.js: Patrones de Render y Composición",
+      "description": "Comparte información entre componentes con render props, high order components y React Hooks. Escala proyectos con principios de diseño, composición de componentes y colocación del estado.",
+      "link": "https://platzi.com/cursos/react-patrones-render/?utm_source=juandc-website",
+      "badge": "https://static.platzi.com/cdn-cgi/image/width=1024,quality=50,format=auto/media/achievements/reactjs-patrones-render_badge-3c77e155-b04a-4c95-ac61-e2b6d2d5b92e.png"
+    },
+    {
+      "name": "Curso de React.js: Manejo Profesional del Estado",
+      "description": "Identifica las herramientas ideales para construir o refactorizar componentes: estados independientes o compuestos, imperativos o declarativos, con funciones o clases, con useState o useReducer.",
+      "link": "https://platzi.com/cursos/react-estado/?utm_source=juandc-website",
+      "badge": "https://static.platzi.com/cdn-cgi/image/width=1024,quality=50,format=auto/media/achievements/react-a4cc5125-0dee-4ec4-a3e3-f1d799973cfd.png"
+    },
+    {
+      "name": "Curso de React.js: Navegación con React Router",
+      "description": "Domina la API de cualquier React Router para integrarlo a viejos o nuevos proyectos. Trabaja con rutas dinámicas, públicas o privadas, además de transmitir estados durante la navegación.",
+      "link": "https://platzi.com/cursos/react-router/?utm_source=juandc-website",
+      "badge": "https://static.platzi.com/cdn-cgi/image/width=1024,quality=50,format=auto/media/achievements/badge-reactrouter-4271fbdd-0c60-43bd-8208-9e2232da90e6.png"
     }
   ]
 }
