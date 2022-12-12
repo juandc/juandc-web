@@ -234,6 +234,7 @@ a {
 }
 
 .course-card:hover .mouseTracker,
+.promo-card:hover .mouseTracker,
 .about-card:hover .mouseTracker {
   background-color: var(--txt-special);
 }
@@ -337,6 +338,59 @@ body.dark .course-card:hover {
 }
 
 
+.promo-card {
+  background-color: var(--light-txt-special-3);
+  background-image: linear-gradient(91.22deg, var(--light-txt-special-3) 32.19%, #0c1733 97.61%, var(--txt-special-3) 127.93%);
+  border: none;
+  color: var(--dark-txt-1);
+  padding: 48px 64px;
+  min-height: auto;
+  width: 100%;
+  
+  box-shadow: 0 0px 25px rgb(79 215 15 / 0%);
+  transform: scale(1);
+  transition-property: box-shadow, transform;
+  transition-duration: .15s;
+}
+
+.promo-card:hover {
+  box-shadow: 0 0px 50px rgb(79 215 15 / 12.5%);
+  transform: scale(1.02);
+}
+
+.promo-card h2 {
+  margin: 0 0 12px;
+}
+
+.promo-cardLink::after {
+  content: ' ';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url('https://static.platzi.com/media/uploads/school_bg_computerscience_2x_efd708987d.png?updated_at=2022-08-11T13:58:02.011Z');
+  background-size: 200px;
+  background-repeat: no-repeat;
+
+  background-position: 100% 0;
+  transition-property: background-size, background-position;
+  transition-duration: .15s;
+}
+
+.promo-card:hover .promo-cardLink::after {
+  background-position: 100% 20%;
+  background-size: 240px;
+}
+
+@media (prefers-reduced-motion) {
+  .promo-card, .promo-cardLink::after {
+    transform: none !important;
+    transition: none !important;
+  }
+}
+
+
 .about-card {
   display: flex;
   justify-content: space-between;
@@ -422,20 +476,34 @@ body.dark .course-card:hover {
   }
 }
 
-footer {
+
+.footer {
   padding-bottom: 24px;
+  row-gap: 16px;
+  max-width: 700px;
 }
 
-footer a {
+.footer a {
+  color: var(--txt-special);
   text-decoration: none;
+  font-family: 'Dosis';
+  font-size: 14px;
 }
 
-footer a:hover {
+.footer small {
+  font-weight: 400;
+}
+
+.footer a:hover {
   text-decoration: underline;
 }
 
 @media (max-width: 956px) {
-  footer a {
+  .footer {
+    padding-bottom: 48px;
+  }
+
+  .footer a {
     text-align: center;
     width: 100%;
   }
