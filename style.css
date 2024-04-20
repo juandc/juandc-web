@@ -166,6 +166,12 @@ a {
   width: 90%;
 }
 
+@media (max-width: 480px), (max-height: 768px) {
+  .hero-container {
+    margin-top: 90px;
+  }
+}
+
 .hero-title {
   margin: 0;
   color: var(--txt-special);
@@ -231,6 +237,12 @@ a {
   gap: 24px;
   justify-content: space-between;
   flex-wrap: wrap;
+}
+
+@media (max-width: 480px), (max-height: 768px) {
+  .section-container {
+    margin-top: 72px;
+  }
 }
 
 .section-title {
