@@ -49,22 +49,35 @@ body {
   padding: 0;
 }
 
+@property --bg-gradient-rotation {
+  syntax: '<angle>';
+  inherits: false;
+  initial-value: 0deg;
+}
+
 body::before {
   content: ' ';
-  background-image: linear-gradient(111.49deg, var(--bg-gradient-1) 30.97%, var(--bg-gradient-2) 67%);
+  background-color: var(--bg-gradient-1);
+  background-image: linear-gradient(
+    var(--bg-gradient-rotation),
+    var(--bg-gradient-1) 30.97%,
+    var(--bg-gradient-2) 67%
+  );
   position: fixed;
   top: -75%;
   left: -75%;
   right: -75%;
   bottom: -75%;
   z-index: -1;
-  transform: rotate(0);
-  animation: rotate-background-gradient 12s linear infinite;
+  animation: rotate-background-gradient 6s linear infinite;
 }
 
 @keyframes rotate-background-gradient {
-  to {
-    transform: rotate(360deg);
+  0% {
+    --bg-gradient-rotation: 0deg;
+  }
+  100% {
+    --bg-gradient-rotation: 360deg;
   }
 }
 
@@ -161,18 +174,40 @@ a {
   font-family: Dosis, Avenir;
 }
 
+@property --titleSpan-gradient-pos {
+  syntax: '<percentage>';
+  inherits: false;
+  initial-value: 50%;
+}
+
 .hero-titleSpan {
   display: block;
   font-size: 48px;
   font-family: Avenir;
   margin-top: 24px;
   line-height: 58px;
-  /* color: var(--txt-1); */
-  background: linear-gradient(91.22deg, var(--txt-special-3) 12.19%, var(--dark-txt-special-2) 57.61%, var(--txt-special-3) 97.93%);
+  background-image: radial-gradient(
+    farthest-corner at var(--titleSpan-gradient-pos) center,
+    var(--txt-special-2) 0%,
+    var(--txt-special-3) 70%
+  );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
   text-fill-color: transparent;
+  animation: move-titleSpan-gradient 12s linear infinite;
+}
+
+@keyframes move-titleSpan-gradient {
+  0%, 50%, 100% {
+    --titleSpan-gradient-pos: 50%;
+  }
+  25% {
+    --titleSpan-gradient-pos: 100%;
+  }
+  75% {
+    --titleSpan-gradient-pos: 0%;
+  }
 }
 
 .hero-titleSpan u {
