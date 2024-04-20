@@ -178,6 +178,7 @@ a {
   font-size: 24px;
   font-weight: 900;
   font-family: Dosis, Avenir;
+  text-transform: uppercase;
 }
 
 @property --titleSpan-gradient-pos {
@@ -190,6 +191,7 @@ a {
   display: block;
   font-size: 48px;
   font-family: Avenir;
+  text-transform: none;
   margin-top: 24px;
   line-height: 58px;
   background-image: radial-gradient(
@@ -223,8 +225,24 @@ a {
 }
 
 .hero-description {
-  margin-top: 36px;
+  margin: 36px 0 24px;
   font-size: 24px;
+  text-wrap: balance;
+}
+
+.hero-link {
+  font-size: 20px;
+  display: block;
+  transition: .15s transform;
+}
+.hero-link:hover {
+  transform: scale(1.05);
+}
+
+.hero-linkIcon {
+  width: 20px;
+  margin-bottom: -2.5px;
+  margin-left: -16px;
 }
 
 
