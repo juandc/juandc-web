@@ -459,7 +459,7 @@ body.dark .course-card:hover {
 .about-card {
   display: flex;
   justify-content: space-between;
-  align-items: start;
+  align-items: center;
   width: 100%;
   padding: 48px 64px;
   border-color: var(--bg-border);
