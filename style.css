@@ -13,7 +13,7 @@
   --light-txt-special: #8015A6;
   --light-txt-special-2: #3DA70C;
   --light-txt-special-3: #0E0319;
-  
+
   --dark-bg-gradient-1: #15011E;
   --dark-bg-gradient-2: #011409;
   --dark-txt-1: #F9ECFF;
@@ -287,7 +287,7 @@ a {
   width: 125px;
   height: 125px;
   filter: blur(120px);
-  
+
   background-color: transparent;
   transform:
     translateX(-50%)
@@ -411,7 +411,7 @@ body.dark .course-card:hover {
   padding: 48px 64px;
   min-height: auto;
   width: 100%;
-  
+
   box-shadow: 0 0px 25px rgb(79 215 15 / 0%);
   transform: scale(1);
   transition-property: box-shadow, transform;
@@ -456,7 +456,7 @@ body.dark .course-card:hover {
 }
 
 
-.about-card {
+.about-card, .portfolio-card {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -465,15 +465,22 @@ body.dark .course-card:hover {
   border-color: var(--bg-border);
 }
 
-.about-cardPhoto {
+.about-cardPhoto, .portfolio-cardPhoto {
   position: relative;
   width: 48%;
   min-width: 300px;
-  margin: 0 48px 0 0;
   padding: 0;
 }
 
-.about-cardPhoto img {
+.about-cardPhoto {
+  margin: 0 48px 0 0;
+}
+
+.portfolio-cardPhoto {
+  margin: 0 0 0 48px;
+}
+
+.about-cardPhoto img, .portfolio-cardPhoto img {
   border-radius: 24px;
   width: 100%;
 }
@@ -482,11 +489,22 @@ body.dark .course-card:hover {
   font-size: 24px;
 }
 
-.about-cardDescription p {
+.portfolio-cardDescription h3 {
+  font-size: 24px;
+}
+
+.portfolio-cardDescription p {
+  font-size: 21px;
+}
+
+.about-cardDescription p,
+.portfolio-cardDescription h3,
+.portfolio-cardDescription p {
   margin-top: 0;
 }
 
-.about-cardDescription p:last-child {
+.about-cardDescription p:last-child,
+.portfolio-cardDescription p:last-child {
   margin-bottom: 0;
 }
 
@@ -494,19 +512,31 @@ body.dark .course-card:hover {
   .about-cardDescription {
     font-size: 22px;
   }
+  .portfolio-cardDescription h3 {
+    font-size: 22px;
+  }
+  .portfolio-cardDescription p {
+    font-size: 18px;
+  }
 }
 
 @media (max-width: 1024px) {
   .about-cardDescription {
     font-size: 20px;
   }
+  .portfolio-cardDescription h3 {
+    font-size: 20px;
+  }
+  .portfolio-cardDescription p {
+    font-size: 16px;
+  }
 }
 
 @media (max-width: 956px) {
-  .about-card {
+  .about-card, .portfolio-card {
     flex-wrap: wrap;
   }
-  .about-cardPhoto {
+  .about-cardPhoto, .portfolio-cardPhoto {
     width: 50%;
     margin: 0 auto;
     display: flex;
@@ -515,28 +545,38 @@ body.dark .course-card:hover {
   .about-cardDescription {
     font-size: 24px;
   }
-  .about-cardDescription p:first-child {
+  .portfolio-cardDescription h3 {
+    font-size: 24px;
+  }
+  .portfolio-cardDescription p {
+    font-size: 21px;
+  }
+  .about-cardDescription p:first-child,
+  .portfolio-cardDescription p:first-child {
     margin-top: 48px;
+  }
+  .portfolio-cardDescription p:last-child {
+    margin-bottom: 48px;
   }
 }
 
 @media (max-width: 768px) {
-  .about-cardPhoto {
+  .about-cardPhoto, .portfolio-cardPhoto {
     width: 100%;
   }
 }
 
 @media (max-width: 600px) {
-  .about-card {
+  .about-card, .portfolio-card {
     padding: 48px 48px;
   }
-  .about-cardPhoto {
+  .about-cardPhoto, .portfolio-cardPhoto {
     min-width: initial;
   }
 }
 
 @media (max-width: 480px) {
-  .about-card {
+  .about-card, .portfolio-card {
     padding: 40px 32px;
   }
 }
