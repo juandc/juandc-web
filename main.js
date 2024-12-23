@@ -14,7 +14,7 @@ function start() {
   $body = document.querySelector('body');
   $schemeCheckbox = document.querySelector('#scheme');
   $coursesContainer = document.querySelector('#courses');
-  
+
   setInitialColorScheme();
   renderCourses();
   setAboutEffects();
@@ -22,7 +22,7 @@ function start() {
 
 function setInitialColorScheme() {
   getColorScheme();
-  
+
   if (colorScheme === 'dark') {
     $schemeCheckbox.checked = true;
   }
@@ -84,7 +84,7 @@ function renderCourses() {
   const mouseSpanName = x => (
     'mouse-' + x.split(' ').join('')
   );
-  
+
   data.courses.forEach(course => {
     $coursesContainer.innerHTML += `
       <section
