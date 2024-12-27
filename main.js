@@ -115,10 +115,7 @@ function renderCourses() {
         >
           Tomar el curso
           <span style="color: transparent">.</span>
-          <img
-            class="course-cardLinkIcon"
-            src="${icon}"
-          />
+          <img class="course-cardLinkIcon" src="${icon}" alt="🔗" />
         </a>
 
         <span id="${mouseSpanName(course.name)}" class="mouseTracker"><span>
@@ -152,7 +149,7 @@ function renderPortfolio() {
             <a href="${project.link}" target="_blank">
               Ver proyecto
               <span style="color: transparent">-</span>
-              <img class="hero-linkIcon" src="${icon}" />
+              <img class="hero-linkIcon" src="${icon}" alt="🔗" />
             </a>
           </p>
         </div>
