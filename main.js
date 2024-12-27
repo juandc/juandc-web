@@ -152,7 +152,7 @@ function renderPortfolio() {
             <a href="${project.link}" target="_blank">
               Ver proyecto
               <span style="color: transparent">-</span>
-              <img class="hero-linkIcon" src="/LinkIcon.png" />
+              <img class="hero-linkIcon" src="${icon}" />
             </a>
           </p>
         </div>
