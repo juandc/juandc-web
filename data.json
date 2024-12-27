@@ -96,5 +96,39 @@
       "link": "https://platzi.com/cursos/proyectos-creativos/?utm_source=juandc-web",
       "badge": "https://static.platzi.com/cdn-cgi/image/width=1024,quality=50,format=auto/media/achievements/piezas-proyectos-creativos-ninas-ninos_badge-01cb5e21-e5b5-46c3-9d10-691c7661f9a3.png"
     }
+  ],
+  "portfolio": [
+    {
+      "name": "English Placement Test",
+      "description": "Evaluación de inglés para todos los niveles (de A1 a C1) y competencias (reading, writing, listening y speaking) con precisión del ~90% con respecto al TOEFL.\nRecomienda la mejor ruta de cursos según las respuestas del estudiante. También genera análisis y reportes sobre el progreso de usuarios con cuenta empresarial.",
+      "link": "https://platzi.com/testingles/?utm_source=juandc-web",
+      "images": [
+        "/english-test.png"
+      ]
+    },
+    {
+      "name": "Platzi Home Page",
+      "description": "Rediseño y optimización de la landing page de Platzi. Mejoras significativas en su conversion rate, velocidad de carga, accesibilidad y SEO.\n+52 puntos de performance en Lighthouse y +0.4% de conversión a registros con respecto a la versión anterior.",
+      "link": "https://platzi.com/?utm_source=juandc-web",
+      "images": [
+        "/landing-page.png"
+      ]
+    },
+    {
+      "name": "Nuevo formato de cursos",
+      "description": "Clases con layout, contenido y funcionalidades especiales para estudiantes con experiencia previa y en búsqueda de contenido específico.\nInspirado en los lyrics de Spotify, combina los formatos de lectura y audio sincronizando la voz del profesor con código, imágenes y texto renderizados directamente en el navegador, sin limitantes del formato de video (como poder seleccionar el código de cualquier instante de la clase).",
+      "link": "https://platzi.com/java/?utm_source=juandc-web",
+      "images": [
+        "/curso-java.png"
+      ]
+    },
+    {
+      "name": "ADA: asistente de aprendizaje",
+      "description": "Chat con inteligencia artificial que responde preguntas sobre cursos, carreras y certificaciones de Platzi. También ayuda a encontrar contenido relevante y resolver problemas técnicos.",
+      "link": "https://platzi.com/ai-chat/?utm_source=juandc-web",
+      "images": [
+        "/ada.png"
+      ]
+    }
   ]
 }

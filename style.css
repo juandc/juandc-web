@@ -294,12 +294,12 @@ a {
     translateY(-50%)
   ;
   transform-origin: center;
-  transition-property: transform, background-color;
   transition-duration: .15s;
 }
 
 .course-card:hover .mouseTracker,
 .promo-card:hover .mouseTracker,
+.portfolio-card:hover .mouseTracker,
 .about-card:hover .mouseTracker {
   background-color: var(--txt-special);
 }

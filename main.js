@@ -5,6 +5,7 @@ import icon from './LinkIcon.png'
 let $body;
 let $schemeCheckbox;
 let $coursesContainer;
+let $portfolioContainer;
 
 let colorScheme = '';
 
@@ -14,9 +15,11 @@ function start() {
   $body = document.querySelector('body');
   $schemeCheckbox = document.querySelector('#scheme');
   $coursesContainer = document.querySelector('#courses');
+  $portfolioContainer = document.querySelector('#portfolio');
 
   setInitialColorScheme();
   renderCourses();
+  renderPortfolio();
   setAboutEffects();
 }
 
@@ -124,12 +127,58 @@ function renderCourses() {
   });
 
   data.courses.forEach(course => {
-    const courseCard = document.getElementById(course.name);
     const spanName = mouseSpanName(course.name);
+    const courseCard = document.getElementById(course.name);
     const mouseSpan = document.getElementById(spanName);
 
     mouseTracker(courseCard, mouseSpan);
-  })
+  });
+}
+
+function renderPortfolio() {
+  const mouseSpanName = x => (
+    'mouse-' + x.split(' ').join('')
+  );
+
+  data.portfolio.forEach(project => {
+    const description = project.description.split('\n');
+    const descriptionRender = description.map(desc => `<p>${desc}</p>`).join('');
+    $portfolioContainer.innerHTML += `
+      <section class="card portfolio-card" id="${project.name}">
+        <div class="portfolio-cardDescription">
+          <h3>${project.name}</h3>
+          ${descriptionRender}
+          <p>
+            <a href="${project.link}" target="_blank">
+              Ver proyecto
+              <span style="color: transparent">-</span>
+              <img class="hero-linkIcon" src="/LinkIcon.png" />
+            </a>
+          </p>
+        </div>
+
+        <figure class="portfolio-cardPhoto">
+          <img
+            id="${mouseSpanName(project.name)}Img"
+            src="${project.images[0]}"
+            alt="${project.name}"
+          />
+        </figure>
+
+        <span id="${mouseSpanName(project.name)}" class="mouseTracker"></span>
+      </section>
+    `;
+  });
+
+  data.portfolio.forEach(project => {
+    const spanName = mouseSpanName(project.name);
+    const projectCard = document.getElementById(project.name);
+    const projectImg = document.getElementById(spanName + 'Img');
+    const mouseSpan = document.getElementById(spanName);
+
+    mouseTracker(projectCard, mouseSpan);
+    projectImg.addEventListener('mousemove', e => e.stopPropagation());
+  });
 }
 
 function setAboutEffects() {
@@ -146,13 +195,6 @@ function mouseTracker(container, span) {
     span.style.transform = `
       translateX(${x}px)
       translateY(${y}px)
-    `;
-  });
-
-  container.addEventListener('mouseleave', (e) => {
-    span.style.transform = `
-      translateX(-50%)
-      translateY(-50%)
     `;
   });
 }
